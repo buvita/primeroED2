@@ -25,7 +25,6 @@ class CursoTest {
 		assertFalse(lanzaException);
 		
 		//clase invalida
-		lanzaException = false;
 		try {
 			c.eliminarAlumno("12345678");
 		} catch (Exception e) {
