@@ -69,7 +69,12 @@ class CursoTest {
 
 	@Test
 	void testNumeroAlumnos() {
-		fail("Not yet implemented");
+		boolean igual=false;
+		if(c.numeroAlumnos()==c.getListaAlumnos().size()) {
+			igual=true;
+		}
+		assertTrue(igual);
+		
 	}
-
+	
 }

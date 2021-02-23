@@ -7,6 +7,10 @@ public class Curso {
 	
 	private List<Persona> listaAlumnos;
 
+	public List<Persona> getListaAlumnos() {
+		return listaAlumnos;
+	}
+
 	/*
 	 * Documentar y crear test unitario
 	 * */
