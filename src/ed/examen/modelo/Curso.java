@@ -4,16 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Curso {
-	
+	 
 	private List<Persona> listaAlumnos;
 
 	public List<Persona> getListaAlumnos() {
 		return listaAlumnos;
 	}
 
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * Este método nos permitirá elimiar un alumno de la lista de alumnos
+	 * @param dni
+	 * @throws Exception
+	 **/
 	public void eliminarAlumno(String dni) throws Exception {
 		if(dni.length()==9) {//comprobar la longitud del dni
 			listaAlumnos.remove(new Persona(dni, "", "")); //solo hace falta el dni

@@ -1,5 +1,9 @@
 package ed.examen.modelo;
 
+/**
+ * @author buba Faty
+ *@version 1.1
+ **/
 public class Persona{
 	
 	private String dni;
@@ -8,26 +12,28 @@ public class Persona{
 	
 	public Persona() {}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	 
 	public Persona(String dni, String nombre, String apellido1) {
 		this.dni = dni;
 		this.nombre = nombre; 
 		this.apellido1 = apellido1;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * @return Esto te devuelve el DNI del alumno
+	 **/
 	public String getDni() {
 		return dni;
 	}
 	
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * Recoge un dni para asignarselo a la persona y verifica que cumple con los parámetros exigidos.
+	 * @param dni
+	 * @throws Exception 
+	 **/
 	public void setDni(String dni) throws Exception {
 		//comprobacion de si el ultimo caracter es una letra
 		if(Character.isLetter(dni.charAt(dni.length()))) {
@@ -37,30 +43,38 @@ public class Persona{
 		}
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * Esta función te devuelve un String correspondiente al nombre de la persona
+	 * @return nombre de la persona
+	 **/
 	public String getNombre() {
 		return nombre;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * Esta es una función le introducimos un String con un nombre para asignarselo a una Persona
+	 * @param nombre
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * Este método te devuelve un tipo String con el apellido de la persona solicitada
+	 * @return devuelve el apellido de la persona
+	 **/
 	public String getApellido1() {
 		return apellido1;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * La función de este método es introducirle un String  con el apellido de la persona para asignarselo
+	 * @param apellido1
+	 **/
 	public void setApellido1(String apellido1) {
 		this.apellido1 = apellido1;
 	}
