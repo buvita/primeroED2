@@ -62,10 +62,7 @@ class CursoTest {
 		assertFalse(noExiste);
 	}
 
-	@Test
-	void testCurso() {
-		fail("Not yet implemented");
-	}
+	
 
 	@Test
 	void testNumeroAlumnos() {
