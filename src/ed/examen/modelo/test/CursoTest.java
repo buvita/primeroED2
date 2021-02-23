@@ -36,7 +36,9 @@ class CursoTest {
 
 	@Test
 	void testAniadirAlumno() {
-		fail("Not yet implemented");
+		int sizeBefore = c.numeroAlumnos();
+		c.aniadirAlumno(p);
+		int sizeAfter=c.numeroAlumnos();
 	}
 
 	@Test
