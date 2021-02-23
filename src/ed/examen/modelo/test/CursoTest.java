@@ -13,7 +13,7 @@ class CursoTest {
 		Persona p=new Persona("12345678Q","Jandro","merino");
 	
 	
-	@Test
+	@Test 
 	void testEliminarAlumno() {
 		//clase valida
 				boolean lanzaException = false;
@@ -62,7 +62,7 @@ class CursoTest {
 		}
 		assertFalse(noExiste);
 	}
-
+ 
 	
 
 	@Test

@@ -17,17 +17,40 @@ class PersonaTest {
 
 	@Test
 	void testGetDni() {
-		 fail("Not yet implemented");
+		 boolean igual=false;
+		 if(p.getDni()=="12345678Q") {
+			igual=true; 
+		 }
+		 assertTrue(igual);
 	}
 
 	@Test
 	void testSetDni() {
-		fail("Not yet implemented");
+		//clase valida
+		boolean tiraException = false;
+		try {
+			p.setDni("12345678Q");
+		}catch(Exception e) {
+			tiraException=true;
+		}
+		assertTrue(tiraException);
+		
+		//clase invalida
+		try {
+			p.setDni("12345678Z");
+		}catch(Exception e) {
+			tiraException=true;
+		}
+		assertTrue(tiraException);
 	}
 
 	@Test
 	void testGetNombre() {
-		fail("Not yet implemented");
+		boolean soniguales=false;
+		if(p.getNombre()=="Jandro") {
+			soniguales=true;
+		}
+		assertTrue(soniguales);
 	}
 
 	@Test

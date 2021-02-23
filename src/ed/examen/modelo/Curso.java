@@ -41,7 +41,7 @@ public class Curso {
 			}
 			i++;
 		}
-		return encontrad o;
+		return encontrado;
 	}	
 	
 	/*
@@ -62,4 +62,6 @@ public class Curso {
 			System.out.println(persona);
 		}
 	}
+
+	
 }
