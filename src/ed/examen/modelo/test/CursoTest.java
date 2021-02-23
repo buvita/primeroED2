@@ -18,7 +18,7 @@ class CursoTest {
 		//clase valida
 		boolean lanzaException = false;
 		try {
-			c.eliminarAlumno("12345678Z9");
+			c.eliminarAlumno("12345678Q");
 		} catch (Exception e) {
 			lanzaException=true;
 		}
@@ -27,7 +27,7 @@ class CursoTest {
 		//clase invalida
 		lanzaException = false;
 		try {
-			c.eliminarAlumno("1234567");
+			c.eliminarAlumno("12345678");
 		} catch (Exception e) {
 			lanzaException=true;
 		}
@@ -39,11 +39,28 @@ class CursoTest {
 		int sizeBefore = c.numeroAlumnos();
 		c.aniadirAlumno(p);
 		int sizeAfter=c.numeroAlumnos();
+		assertEquals(sizeBefore,sizeAfter-1);
 	}
 
 	@Test
 	void testEstaRegistrado() {
-		fail("Not yet implemented");
+		//clase valida
+		boolean noExiste = false;
+		try{
+			c.estaRegistrado("12345678Q");
+		}catch(Exception e) {
+			noExiste=true;
+		}
+		assertFalse(noExiste);
+		 
+		//clase invalida
+		
+		try{
+			c.estaRegistrado("12345678");
+		}catch(Exception e) {
+			noExiste=true;
+		}
+		assertFalse(noExiste);
 	}
 
 	@Test
