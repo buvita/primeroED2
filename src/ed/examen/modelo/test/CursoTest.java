@@ -16,21 +16,22 @@ class CursoTest {
 	@Test
 	void testEliminarAlumno() {
 		//clase valida
-		boolean lanzaException = false;
-		try {
-			c.eliminarAlumno("12345678Q");
-		} catch (Exception e) {
-			lanzaException=true;
-		}
-		assertFalse(lanzaException);
-		
-		//clase invalida
-		try {
-			c.eliminarAlumno("12345678");
-		} catch (Exception e) {
-			lanzaException=true;
-		}
-		assertFalse(lanzaException);
+				boolean lanzaException = false;
+				try {
+					c.eliminarAlumno("12345678Q");
+				} catch (Exception e) {
+					lanzaException=true;
+				}
+				assertFalse(lanzaException);
+				
+				//clase invalida
+				lanzaException = false;
+				try {
+					c.eliminarAlumno("12345678Z");
+				} catch (Exception e) {
+					lanzaException=true;
+				}
+				assertFalse(lanzaException);
 	}
 
 	@Test
