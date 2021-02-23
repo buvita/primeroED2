@@ -41,7 +41,7 @@ public class Curso {
 			}
 			i++;
 		}
-		return encontrado;
+		return encontrad o;
 	}	
 	
 	/*
