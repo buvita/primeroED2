@@ -14,8 +14,8 @@ public class Curso {
 	
 	/**
 	 * Este método nos permitirá elimiar un alumno de la lista de alumnos
-	 * @param dni
-	 * @throws Exception
+	 * @param dni toma como parámetro el dni del alumno
+	 * @throws Exception se lanza una excepción si el dni introducido no es de longitud 9
 	 **/
 	public void eliminarAlumno(String dni) throws Exception {
 		if(dni.length()==9) {//comprobar la longitud del dni
@@ -33,8 +33,8 @@ public class Curso {
 	
 	/**
 	 * Esta función nos va a permitir comprobar si un alumno se encuentra dentro de nuestra lista de alumnos
-	 * @param dni
-	 * @return
+	 * @param dni toma como parámetro el dni del alumno
+	 * @return te devuelve un booleano ( true: si se encuentra registrado), false:si no está dentro de la lista)
 	 **/
 	public Boolean estaRegistrado(String dni) {
 		int i =0;
@@ -56,7 +56,7 @@ public class Curso {
 	
 	/**
 	 * Este método devuelve un int con el tamaño de la lista de nuestros alumnos
-	 * @return
+	 * @return te devuelve el tamaño de la lista de alumnos en forma de int
 	 */
 	public Integer numeroAlumnos() {return listaAlumnos.size();}
 	

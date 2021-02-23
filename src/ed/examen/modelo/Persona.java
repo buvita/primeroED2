@@ -31,8 +31,8 @@ public class Persona{
 	
 	/**
 	 * Recoge un dni para asignarselo a la persona y verifica que cumple con los parámetros exigidos.
-	 * @param dni
-	 * @throws Exception 
+	 * @param dni toma como parámetro el dni de la persona
+	 * @throws Exception  te devuelve una excepción si el dni introducido no es de longitud 9 y el ultimo carácter es una letra
 	 **/
 	public void setDni(String dni) throws Exception {
 		//comprobacion de si el ultimo caracter es una letra
@@ -55,7 +55,7 @@ public class Persona{
 	
 	/**
 	 * Esta es una función le introducimos un String con un nombre para asignarselo a una Persona
-	 * @param nombre
+	 * @param nombre toma como parámetro el nombre de la persona
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
@@ -73,7 +73,7 @@ public class Persona{
 	
 	/**
 	 * La función de este método es introducirle un String  con el apellido de la persona para asignarselo
-	 * @param apellido1
+	 * @param apellido1 toma como parámetro el apellido de la persona
 	 **/
 	public void setApellido1(String apellido1) {
 		this.apellido1 = apellido1;
