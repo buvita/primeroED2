@@ -50,17 +50,18 @@ class PersonaTest {
 		if(p.getNombre()=="Jandro") {
 			soniguales=true;
 		}
-		assertTrue(soniguales);
+		assert(soniguales);
 	}
 
 	@Test
 	void testSetNombre() {
-		fail("Not yet implemented");
-	}
+		p.setNombre("Jandro");
+		assertEquals("Jandro",p.getNombre());
+	} 
 
 	@Test
 	void testGetApellido1() {
-		fail("Not yet implemented");
+		assertEquals("merino",p.getApellido1());
 	}
 
 	@Test
