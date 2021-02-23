@@ -25,16 +25,17 @@ public class Curso {
 		}
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
 	public void aniadirAlumno(Persona p) {
 		listaAlumnos.add(p);
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * Esta función nos va a permitir comprobar si un alumno se encuentra dentro de nuestra lista de alumnos
+	 * @param dni
+	 * @return
+	 **/
 	public Boolean estaRegistrado(String dni) {
 		int i =0;
 		Boolean encontrado=false;
@@ -47,16 +48,16 @@ public class Curso {
 		return encontrado;
 	}	
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
 	public Curso() {
 		listaAlumnos= new ArrayList<Persona>();
 	}
 	
-	/*
-	 * Documentar y crear test unitario
-	 * */
+	
+	/**
+	 * Este método devuelve un int con el tamaño de la lista de nuestros alumnos
+	 * @return
+	 */
 	public Integer numeroAlumnos() {return listaAlumnos.size();}
 	
 	
